@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUNE — thời trang ứng dụng hiện đại, tối giản và dễ phối mỗi ngày.">
+  <meta name="theme-color" content="#f6f3ed">
+  <title>LUNE Studio — Mặc theo cách của bạn</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css + AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    <p>ƯU ĐÃI CHÀO MÙA MỚI — GIẢM 10% CHO ĐƠN HÀNG ĐẦU TIÊN</p>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#top" aria-label="LUNE Studio - Trang chủ">LUNE<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Điều hướng chính">
+      <a href="#collection">Bộ sưu tập</a>
+      <a href="#bestsellers">Bán chạy</a>
+      <a href="#story">Câu chuyện</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="searchToggle" aria-label="Mở tìm kiếm" title="Tìm kiếm">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+      </button>
+      <button class="cart-button" id="cartButton" aria-label="Xem giỏ hàng">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 11.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+        <span>Giỏ hàng</span><b id="cartCount">0</b>
+      </button>
+    </div>
+  </header>
+
+  <aside class="search-panel" id="searchPanel" aria-label="Tìm kiếm sản phẩm" hidden>
+    <label for="searchInput">Tìm món đồ bạn yêu thích</label>
+    <div class="search-field"><input id="searchInput" type="search" placeholder="Ví dụ: áo sơ mi, quần..." autocomplete="off"><button id="clearSearch" type="button">Xóa</button></div>
+  </aside>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy animate__animated animate__fadeInUp">
+        <p class="eyebrow"><span class="eyebrow-line"></span> BỘ SƯU TẬP MỚI · 2026</p>
+        <h1 id="heroTitle">Phong cách<br><em>bắt đầu từ bạn.</em></h1>
+        <p class="hero-description">Những thiết kế tinh giản, chất liệu dễ chịu và phom dáng vượt thời gian — để mỗi ngày mặc đẹp đều thật tự nhiên.</p>
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#collection">Khám phá bộ sưu tập <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#story">Câu chuyện của LUNE <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-note"><span class="note-stars" aria-hidden="true">★★★★★</span><span>Được yêu thích bởi hơn 2.000 khách hàng</span></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="Người mẫu diện trang phục thời trang tối giản trong ánh nắng tự nhiên" fetchpriority="high">
+        <div class="hero-sticker"><span>LESS,</span><span>but better.</span><i aria-hidden="true">✳</i></div>
+        <div class="hero-caption"><span>01 / 03</span><span>THE EVERYDAY EDIT</span></div>
+      </div>
+      <div class="hero-side-label" aria-hidden="true">DRESS YOUR OWN STORY — LUNE STUDIO</div>
+    </section>
+
+    <section class="trust-strip" aria-label="Cam kết của LUNE">
+      <div><span class="trust-icon">✳</span><p>Thiết kế tối giản</p></div>
+      <div><span class="trust-icon">◇</span><p>Chất liệu chọn lọc</p></div>
+      <div><span class="trust-icon">↺</span><p>Đổi size dễ dàng</p></div>
+      <div><span class="trust-icon">♡</span><p>Đóng gói thân thiện</p></div>
+    </section>
+
+    <section class="section collection-section" id="collection" aria-labelledby="collectionTitle">
+      <div class="section-heading" data-aos="fade-up">
+        <div><p class="eyebrow">TÌM PHONG CÁCH CỦA BẠN</p><h2 id="collectionTitle">Chọn theo <em>cảm hứng.</em></h2></div>
+        <p class="section-intro">Tủ đồ tinh gọn, lựa chọn linh hoạt<br>cho mọi khoảnh khắc thường ngày.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category-card category-large" href="#bestsellers" data-category-link="Áo" data-aos="fade-up">
+          <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=900&q=80" alt="Trang phục áo kiểu tông màu trung tính" loading="lazy">
+          <span class="category-shade"></span><span class="category-content"><small>01 — EVERYDAY ESSENTIALS</small><strong>Áo & sơ mi</strong><span class="category-cta">Khám phá <b>↗</b></span></span>
+        </a>
+        <a class="category-card" href="#bestsellers" data-category-link="Quần" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Phong cách phối đồ hiện đại với quần thời trang" loading="lazy">
+          <span class="category-shade"></span><span class="category-content"><small>02 — THE PERFECT FIT</small><strong>Quần & chân váy</strong><span class="category-cta">Khám phá <b>↗</b></span></span>
+        </a>
+        <a class="category-card" href="#bestsellers" data-category-link="Phụ kiện" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80" alt="Phụ kiện và trang phục được sắp xếp tinh tế" loading="lazy">
+          <span class="category-shade"></span><span class="category-content"><small>03 — FINAL TOUCH</small><strong>Phụ kiện</strong><span class="category-cta">Khám phá <b>↗</b></span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="bestsellers" aria-labelledby="productsTitle">
+      <div class="section-heading products-heading" data-aos="fade-up">
+        <div><p class="eyebrow">LỰA CHỌN ĐƯỢC YÊU THÍCH</p><h2 id="productsTitle">LUNE <em>best sellers.</em></h2></div>
+        <a class="text-link desktop-link" href="#contact">Xem hướng dẫn mua hàng <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="product-toolbar" data-aos="fade-up">
+        <div class="filter-list" role="group" aria-label="Lọc sản phẩm theo danh mục">
+          <button class="filter-button active" data-filter="Tất cả" aria-pressed="true">Tất cả</button>
+          <button class="filter-button" data-filter="Áo" aria-pressed="false">Áo</button>
+          <button class="filter-button" data-filter="Quần" aria-pressed="false">Quần</button>
+          <button class="filter-button" data-filter="Phụ kiện" aria-pressed="false">Phụ kiện</button>
+        </div>
+        <p class="result-count" id="resultCount">04 sản phẩm</p>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="Áo" data-name="Áo sơ mi linen" data-aos="fade-up">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=700&q=80" alt="Áo sơ mi linen màu sáng" loading="lazy"><span class="product-label">BEST SELLER</span><button class="quick-add" data-add="Áo sơ mi Linen" data-price="490000" aria-label="Thêm Áo sơ mi Linen vào giỏ hàng">+ Thêm nhanh</button></div>
+          <div class="product-meta"><div><h3>Áo sơ mi Linen</h3><p>Trắng kem · Linen blend</p></div><strong>490.000₫</strong></div>
+        </article>
+        <article class="product-card" data-category="Quần" data-name="Quần ống rộng" data-aos="fade-up" data-aos-delay="80">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=700&q=80" alt="Quần thời trang phom rộng" loading="lazy"><span class="product-label product-label-soft">NEW ARRIVAL</span><button class="quick-add" data-add="Quần ống rộng" data-price="650000" aria-label="Thêm Quần ống rộng vào giỏ hàng">+ Thêm nhanh</button></div>
+          <div class="product-meta"><div><h3>Quần ống rộng</h3><p>Nâu mocha · Cotton twill</p></div><strong>650.000₫</strong></div>
+        </article>
+        <article class="product-card" data-category="Áo" data-name="Áo thun Everyday" data-aos="fade-up" data-aos-delay="160">
+          <div class="product-image-wrap"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Áo thun trắng kiểu dáng cơ bản" loading="lazy"><span class="product-label product-label-soft">EVERYDAY</span><button class="quick-add" data-add="Áo thun Everyday" data-price="320000" aria-label="Thêm Áo thun Everyday vào giỏ hàng">+ Thêm nhanh</button></div>
+          <div class="product-meta"><div><h3>Áo thun Everyday</h3><p>Trắng tinh · Cotton 100%</p></div><strong>320.000₫</strong></div>
+        </article>
+        <article class="product-card" data-category="Phụ kiện" data-name="Túi tote Minimal" data-aos="fade-up" data-aos-delay="240">
+          <div class="product-image-wrap"><img src="assets/tote-minimal.svg" alt="Túi xách tối giản dùng hằng ngày" loading="lazy"><span class="product-label product-label-soft">JUST IN</span><button class="quick-add" data-add="Túi tote Minimal" data-price="390000" aria-label="Thêm Túi tote Minimal vào giỏ hàng">+ Thêm nhanh</button></div>
+          <div class="product-meta"><div><h3>Túi tote Minimal</h3><p>Be tự nhiên · Canvas</p></div><strong>390.000₫</strong></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Không tìm thấy sản phẩm phù hợp. Thử từ khóa khác nhé!</p>
+      <p class="mobile-more"><a class="text-link" href="#contact">Cần tư vấn chọn đồ? <span aria-hidden="true">→</span></a></p>
+    </section>
+
+    <section class="story-section" id="story" aria-labelledby="storyTitle">
+      <div class="story-image" data-aos="fade-right"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=85" alt="Khoảnh khắc khám phá phong cách cá nhân cùng thời trang" loading="lazy"><span class="image-index">L / 2026</span></div>
+      <div class="story-copy" data-aos="fade-left"><p class="eyebrow">ÍT HƠN, CÓ CHỦ ĐÍCH HƠN</p><h2 id="storyTitle">Mặc đẹp không cần<br><em>quá nhiều.</em></h2><p>LUNE bắt đầu từ một ý tưởng đơn giản: những món đồ phù hợp với bạn nên dễ mặc, dễ phối và khiến bạn tự tin theo cách riêng.</p><p>Chúng tôi yêu phom dáng vượt thời gian, bảng màu dễ kết hợp và những lựa chọn có thể đồng hành cùng bạn qua nhiều mùa.</p><a class="button button-outline" href="#contact">Tìm hiểu về LUNE <span aria-hidden="true">↗</span></a><div class="signature">Wear what feels like you. <span>— LUNE Studio</span></div></div>
+    </section>
+
+    <section class="quote-section" data-aos="fade-up" aria-label="Triết lý thời trang của LUNE"><span class="quote-mark">“</span><blockquote>Phong cách không phải là mặc theo ai đó.<br>Là cảm giác <em>đúng với chính mình.</em></blockquote><p>THE LUNE PHILOSOPHY</p></section>
+
+    <section class="newsletter-section" id="contact" aria-labelledby="newsletterTitle">
+      <div data-aos="fade-up"><p class="eyebrow">LUNE LETTERS</p><h2 id="newsletterTitle">Một chút cảm hứng<br><em>gửi đến bạn.</em></h2><p>Nhận tin bộ sưu tập mới, gợi ý phối đồ và ưu đãi dành riêng cho bạn.</p></div>
+      <form class="newsletter-form" id="newsletterForm" data-aos="fade-up" data-aos-delay="100">
+        <label class="sr-only" for="emailInput">Địa chỉ email</label>
+        <div class="email-field"><input id="emailInput" name="email" type="email" placeholder="Email của bạn" required><button type="submit" aria-label="Đăng ký nhận tin">→</button></div>
+        <small id="newsletterMessage" aria-live="polite">Bằng việc đăng ký, bạn đồng ý nhận email từ LUNE Studio.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><div class="footer-brand"><a class="wordmark" href="#top">LUNE<span>.</span></a><p>Everyday pieces, lasting style.<br>Thời trang ứng dụng cho phiên bản tốt nhất của bạn.</p></div>
+      <div class="footer-column"><h2>Khám phá</h2><a href="#collection">Bộ sưu tập</a><a href="#bestsellers">Sản phẩm bán chạy</a><a href="#story">Về LUNE</a></div>
+      <div class="footer-column"><h2>Hỗ trợ</h2><a href="#contact">Hướng dẫn mua hàng</a><a href="#contact">Đổi trả & vận chuyển</a><a href="mailto:hello@lunestudio.example">hello@lunestudio.example</a></div>
+      <div class="footer-social"><h2>Theo dõi chúng tôi</h2><div><a href="#contact" aria-label="Instagram của LUNE">IG ↗</a><a href="#contact" aria-label="TikTok của LUNE">TK ↗</a><a href="#contact" aria-label="Facebook của LUNE">FB ↗</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 LUNE Studio. Bài tập học phần Thiết kế Web.</p><a href="#top">Lên đầu trang ↑</a><p>Designed with intention.</p></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <dialog class="cart-dialog" id="cartDialog" aria-labelledby="cartDialogTitle"><div class="dialog-header"><h2 id="cartDialogTitle">Giỏ hàng của bạn</h2><button id="closeCart" class="close-dialog" aria-label="Đóng giỏ hàng">×</button></div><div id="cartItems" class="cart-items"><p class="cart-empty">Giỏ hàng đang trống.</p></div><div class="cart-total"><span>Tạm tính</span><strong id="cartTotal">0₫</strong></div><p class="demo-note">Đây là giỏ hàng minh họa cho bài tập, chưa hỗ trợ thanh toán thật.</p><button class="button button-dark checkout-button" id="checkoutButton">Tiếp tục mua sắm</button></dialog>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

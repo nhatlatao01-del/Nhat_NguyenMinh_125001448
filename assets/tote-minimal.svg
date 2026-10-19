@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Túi tote Minimal màu be</title>
+  <desc id="desc">Túi tote canvas màu be tự nhiên trên nền studio màu kem.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eee9e0"/>
+      <stop offset="1" stop-color="#dcd5ca"/>
+    </linearGradient>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0" stop-color="#d6c5a5"/>
+      <stop offset="0.45" stop-color="#cbbb9d"/>
+      <stop offset="1" stop-color="#b6a382"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b4a080"/>
+      <stop offset="1" stop-color="#c8b797"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b59e79"/>
+      <stop offset="1" stop-color="#8f795b"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-25%" width="160%" height="170%">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+    <pattern id="weave" width="9" height="9" patternUnits="userSpaceOnUse">
+      <path d="M0 1H9 M0 6H9" stroke="#fff8ea" stroke-opacity=".15" stroke-width="1"/>
+      <path d="M2 0V9 M7 0V9" stroke="#776447" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <circle cx="135" cy="190" r="190" fill="#f8f4ed" opacity=".44"/>
+  <path d="M0 930 Q245 840 450 935 T900 905 V1200 H0Z" fill="#d2c9bc" opacity=".36"/>
+  <ellipse cx="466" cy="1001" rx="250" ry="46" fill="#6d6250" opacity=".24" filter="url(#shadow)"/>
+  <!-- handles -->
+  <path d="M320 420 C320 250 342 165 405 165 C468 165 483 255 480 425" fill="none" stroke="#9d8767" stroke-width="37" stroke-linecap="round"/>
+  <path d="M322 420 C322 252 345 177 405 177 C456 177 469 264 465 423" fill="none" stroke="url(#handle)" stroke-width="25" stroke-linecap="round"/>
+  <path d="M445 420 C445 250 465 165 530 165 C592 165 606 255 603 420" fill="none" stroke="#9d8767" stroke-width="37" stroke-linecap="round"/>
+  <path d="M447 420 C447 252 470 177 530 177 C581 177 593 264 588 420" fill="none" stroke="url(#handle)" stroke-width="25" stroke-linecap="round"/>
+  <!-- tote silhouette -->
+  <path d="M237 380 Q450 404 665 380 L714 950 Q710 979 680 983 L220 983 Q190 979 186 950Z" fill="url(#side)" opacity=".75"/>
+  <path d="M235 378 Q450 398 665 378 L682 943 Q682 967 659 970 L240 970 Q218 967 218 943Z" fill="url(#canvas)"/>
+  <path d="M235 378 Q450 398 665 378 L682 943 Q682 967 659 970 L240 970 Q218 967 218 943Z" fill="url(#weave)"/>
+  <!-- front panel details -->
+  <path d="M250 405 Q450 425 650 405" fill="none" stroke="#f1e5cf" stroke-opacity=".72" stroke-width="5"/>
+  <path d="M245 425 L252 940 Q252 949 263 950 M655 425 L648 940 Q648 949 637 950" fill="none" stroke="#8d7859" stroke-opacity=".4" stroke-width="3"/>
+  <path d="M274 465 L278 907 M624 465 L620 907" stroke="#f4e7d0" stroke-opacity=".23" stroke-width="2"/>
+  <rect x="350" y="610" width="200" height="94" rx="2" fill="#d5c5a7" opacity=".42"/>
+  <text x="450" y="650" text-anchor="middle" font-family="Georgia,serif" font-size="26" letter-spacing="7" fill="#594b37">LUNE</text>
+  <path d="M398 672 H502" stroke="#594b37" stroke-width="1.4" opacity=".7"/>
+  <text x="450" y="691" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" letter-spacing="3.2" fill="#594b37">STUDIO</text>
+  <!-- soft natural highlight -->
+  <path d="M265 438 Q292 600 284 865" fill="none" stroke="#fff8eb" stroke-opacity=".25" stroke-width="17" stroke-linecap="round"/>
+  <path d="M635 450 Q651 635 647 855" fill="none" stroke="#806c4e" stroke-opacity=".11" stroke-width="20" stroke-linecap="round"/>
+  <text x="54" y="1110" font-family="Arial,sans-serif" font-size="13" letter-spacing="4" fill="#655d52" opacity=".82">EVERYDAY ESSENTIALS</text>
+  <text x="846" y="1110" text-anchor="end" font-family="Arial,sans-serif" font-size="13" letter-spacing="3" fill="#655d52" opacity=".82">L / 04</text>
+</svg>
